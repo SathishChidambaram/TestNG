@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test thread-count="5" name="Test(failed)(failed)" parallel="classes">
+    <classes>
+      <class name="org.testngTask.Question_3_Task">
+        <methods>
+          <include name="tc7"/>
+          <include name="tc3"/>
+          <include name="tc6"/>
+          <include name="tc5"/>
+          <include name="tc4"/>
+        </methods>
+      </class> <!-- org.testngTask.Question_3_Task -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

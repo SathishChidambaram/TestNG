@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="passWord" value="sathish@123"/>
+  <parameter name="userName" value="sathish@gmail.com"/>
+  <parameter name="passWord1" value="swetha@123"/>
+  <parameter name="userName1" value="jeni@gmail.com"/>
+  <listeners>
+    <listener class-name="org.testngTask.AutoMaticReRun"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="org.testngTask.Facebook">
+        <methods>
+          <include name="tc3" invocation-numbers="0"/>
+          <include name="tc1" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- org.testngTask.Facebook -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
